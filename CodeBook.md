@@ -1,6 +1,6 @@
-The data frame includes the following variables:
+The data frame includes the following 66 variables:
 
-activity:
+- activity:
 	walking
     walkupstairs (walking upstairs)
     walkdownstairs (walking downstairs)
@@ -8,9 +8,7 @@ activity:
     standing
     laying
 	
-subject: The subject who performed the activity for each window sample. It's range is from 1 to 30.
-
-The values in the data frame are the average of each variable (features) for each activity and each subject. 
+- subject: The subject who performed the activity for each window sample. It's range is from 1 to 30.
 
 Features: The features selected for this data frame come from the accelerometer and gyroscope 3-axial raw signals tacc-xyz and tgyro-xyz.
 These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz.
@@ -22,82 +20,74 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The body acceleration signal obtained by subtracting the gravity from the total acceleration:
 
-	tbodyacc-mean-x
-	tbodyacc-correlation-xz
-	tbodyacc-correlation-yz
-	tgravityacc-mean-x
-	tgravityacc-correlation-xz
-	tgravityacc-correlation-yz
-	tbodyaccjerk-mean-x
-	tbodyaccjerk-correlation-xz
-	tbodyaccjerk-correlation-yz
-	
-	tbodyaccmag-arcoeff3
-	tgravityaccmag-arcoeff3
-	tbodyaccjerkmag-arcoeff3
-
-	fbodyacc-mean-x
-	fbodyacc-bandsenergy-124
-	fbodyacc-bandsenergy-2548
-	fbodyaccjerk-mean-x
-	fbodyaccjerk-bandsenergy-124
-	fbodyaccjerk-bandsenergy-2548
-	
-	tbodyacc-mean-y
-	tbodyacc-mean-z
-	tbodyacc-std-x
-	tgravityacc-mean-y
-	tgravityacc-mean-z
-	tgravityacc-std-x
-	tbodyaccjerk-mean-y
-	tbodyaccjerk-mean-z
-	tbodyaccjerk-std-x
-	
-	tbodyaccmag-arcoeff4
-	tgravityaccmag-arcoeff4
-	tbodyaccjerkmag-arcoeff4
-	
-	fbodyacc-mean-y
-	fbodyacc-mean-z
-	fbodyacc-std-x
-	fbodyaccjerk-mean-y
-	fbodyaccjerk-mean-z
-	fbodyaccjerk-std-x
-	
-	fbodyaccmag-kurtosis
-	fbodybodyaccjerkmag-kurtosis
+ - tbodyacc-mean-x
+ - tbodyacc-mean-y
+ - tbodyacc-mean-z
+ - tgravityacc-mean-x
+ - tgravityacc-mean-y
+ - tgravityacc-mean-z
+ - tbodyaccjerk-mean-x
+ - tbodyaccjerk-mean-y
+ - tbodyaccjerk-mean-z
+ - tbodyaccmag-mean
+ - tgravityaccmag-mean
+ - tbodyaccjerkmag-mean
+ - tbodygyromag-mean
+ - tbodygyrojerkmag-mean
+ - fbodyacc-mean-x
+ - fbodyacc-mean-y
+ - fbodyacc-mean-z
+ - fbodyaccjerk-mean-x
+ - fbodyaccjerk-mean-y
+ - fbodyaccjerk-mean-z
+ - fbodyaccmag-mean
+ - fbodybodyaccjerkmag-mean
+ 
+ - tbodyacc-std-x
+ - tbodyacc-std-y
+ - tbodyacc-std-z
+ - tgravityacc-std-x
+ - tgravityacc-std-y
+ - tgravityacc-std-z
+ - tbodyaccjerk-std-x
+ - tbodyaccjerk-std-y
+ - tbodyaccjerk-std-z
+ - tbodyaccmag-std
+ - tgravityaccmag-std
+ - tbodyaccjerkmag-std
+ - fbodyacc-std-x
+ - fbodyacc-std-y
+ - fbodyacc-std-z
+ - fbodyaccjerk-std-x
+ - fbodyaccjerk-std-y
+ - fbodyaccjerk-std-z
+ - fbodyaccmag-std
+ - fbodybodyaccjerkmag-std
 	
 The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-	tbodygyro-mean-x
-	tbodygyro-correlation-xz
-	tbodygyro-correlation-yz
-	tbodygyrojerk-mean-x
-	tbodygyrojerk-correlation-xz
-
-	tbodygyromag-arcoeff3
-	tbodygyrojerkmag-arcoeff3
-	tbodygyrojerkmag-arcoeff4
-	
-	fbodygyro-mean-x
-	fbodygyro-bandsenergy-124
-	fbodyaccmag-skewness
-	fbodybodyaccjerkmag-skewness
-	fbodybodygyromag-skewness
-	
-	tbodygyro-mean-y
-	tbodygyro-mean-z
-	tbodygyro-std-x
-	tbodygyrojerk-mean-y
-	tbodygyrojerk-mean-z
-	tbodygyrojerk-std-x
-	tbodygyrojerk-correlation-yz
-
-	tbodygyromag-arcoeff4
-
-	fbodygyro-mean-y
-	fbodygyro-mean-z
-	fbodygyro-std-x
-	fbodygyro-bandsenergy-2548
-
-	fbodybodygyromag-kurtosis
+ - tbodygyro-mean-x
+ - tbodygyro-mean-y
+ - tbodygyro-mean-z
+ - tbodygyrojerk-mean-x
+ - tbodygyrojerk-mean-y
+ - tbodygyrojerk-mean-z
+ - fbodygyro-mean-x
+ - fbodygyro-mean-y
+ - fbodygyro-mean-z
+ - fbodybodygyromag-mean
+ - fbodybodygyrojerkmag-mean
+ 
+ - tbodygyro-std-x
+ - tbodygyro-std-y
+ - tbodygyro-std-z
+ - tbodygyrojerk-std-x
+ - tbodygyrojerk-std-y
+ - tbodygyrojerk-std-z
+ - tbodygyromag-std
+ - tbodygyrojerkmag-std
+ - fbodygyro-std-x
+ - fbodygyro-std-y
+ - fbodygyro-std-z
+ 
+The values in the data frame are the average of each variable (features) for each activity and each subject. 

@@ -35,12 +35,12 @@ for (i in 1:length(y[,1])){
 tab_xy <- cbind(subj,y,tab)
 
 #Select mean & std columns
-id_mean <- grep("mean()",features,fixed=TRUE) #mean columns
-id_std <- grep("std()",features,fixed=TRUE)   #std columns
-id <- c(id_mean,id_std)
+id_mean <- grep("mean()",names(tab_xy),fixed=TRUE) #mean columns
+id_std <- grep("std()",names(tab_xy),fixed=TRUE)   #std columns
+id <- c(1,2,id_mean,id_std)
 
 #The first tidy data frame
-tab_mean_std <- tab_xy[,id,]
+tab_mean_std <- tab_xy[,id]
 tab_mean_std <- tab_mean_std[order(tab_mean_std$subject,tab_mean_std$activity),]
 
 #Columns names
